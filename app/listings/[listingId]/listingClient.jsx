@@ -88,7 +88,19 @@ const ListingClient = ({ listing, currentUser, reservations = [] }) => {
           router.push("/reservations");
         });
     },
-    [totalPrice, dateRange, listing?.id, router, note, phone]
+    [
+      totalPrice, 
+      dateRange, 
+      listing?.id, 
+      router, 
+      note, 
+      phone,
+      setIsLoading, 
+      setNote, 
+      setPhone, 
+      setShowSuccessMessage, 
+      status
+    ]
   );
 
   useEffect(() => {

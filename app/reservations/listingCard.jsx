@@ -14,7 +14,7 @@ const ListingCard = ({
   onAction,
   disabled,
   id = "",
-  currentUser,
+
 }) => {
   const router = useRouter();
 

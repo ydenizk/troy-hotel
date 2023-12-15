@@ -124,7 +124,7 @@ const ListingClient = ({ listing, currentUser, reservations = [] }) => {
     >
       <div className="flex flex-col gap-2 w-full mmd:order-2 xs:mx-2  ">
         <div className="relative h-96 xs:h-80 w-full flex  items-center overflow-hidden">
-          {listing.imageSrc.map((dt, index) => {
+          {listing?.imageSrc.map((dt, index) => {
             return (
               <div
                 key={dt}

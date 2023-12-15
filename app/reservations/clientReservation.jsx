@@ -34,7 +34,7 @@ const ClientReservation = ({ reservations, currentUser }) => {
 
   return (
     <div className="w-full p-2 flex flex-col ">
-      {reservations.map((reservation) => {
+      {reservations?.map((reservation) => {
         return (
           <ListingCard 
           key={reservation.id}

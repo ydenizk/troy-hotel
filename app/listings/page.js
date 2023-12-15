@@ -21,7 +21,7 @@ import NavOthers2 from "./navOthers2";
 
 const getData = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/listings", {
+    const res = await fetch("api/listings", {
       cache: "no-store",
     });
 

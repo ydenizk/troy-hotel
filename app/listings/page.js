@@ -7,7 +7,7 @@ import SecondOverlay from "@/components/secondOverlay";
 import NavOthers2 from "./navOthers2";
 
 
-const getData = async () => {
+/* const getData = async () => {
   const res = await fetch("http://localhost:3000/api/listings", {
     cache: "no-store",
   });
@@ -17,7 +17,33 @@ const getData = async () => {
   }
 
   return res.json();
+}; */
+
+const getData = async () => {
+  try {
+    const res = await fetch("http://localhost:3000/api/listings", {
+      cache: "no-store",
+    });
+
+    if (!res.ok) {
+      throw new Error(`Failed with status: ${res.status}`);
+    }
+
+    return res.json();
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    throw error; // Rethrow the error to handle it in the calling function
+  }
 };
+
+
+
+
+
+
+
+
+
 
 const details = [
   {

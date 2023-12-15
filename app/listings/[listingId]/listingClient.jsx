@@ -93,8 +93,6 @@ const ListingClient = ({ listing, currentUser, reservations = [] }) => {
       dateRange, 
       listing?.id, 
       router, 
-      note, 
-      phone,
       setIsLoading, 
       setNote, 
       setPhone, 

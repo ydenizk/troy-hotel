@@ -83,7 +83,7 @@ async function RoomsPage() {
                           <RoomDetails data={card.rommsqm2} />
 
                           <p className="font-light tracking-wide    text-neutral-400 mb-10">
-                            {card.description}
+                            {card.description}.
                           </p>
 
                           <Link

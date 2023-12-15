@@ -65,7 +65,7 @@ async function RoomsPage() {
 
           <div className="mx-auto flex flex-col justify-center items-center gap-4 mb-4 ">
             {listings
-              ?(  listings.map((card) => {
+              ?(  listings?.map((card) => {
                   return (
                     <div className="mx-6" key={card.id}>
                       <div

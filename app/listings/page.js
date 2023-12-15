@@ -87,7 +87,7 @@ async function RoomsPage() {
                           </p>
 
                           <Link
-                            href={`http://localhost:3000/listings/${card.id}`}
+                            href={`${process.env.NEXTAUTH_URL}/listings/${card.id}`}
                             className="p-3 px-4 uppercase  tracking-wide text-neutral-500 
                            border border-neutral-300 transition-all hover:text-neutral-700 hover:border-neutral-700 duration-500"
                           >

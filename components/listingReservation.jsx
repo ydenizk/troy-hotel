@@ -199,7 +199,7 @@ const ListingReservation = ({
         "
       >
         {isLoading ? (
-          <div role="status" className="text-center mx-auto">
+          <div role="status" className="text-center mx-auto flex justify-center items-center ">
             <svg
               aria-hidden="true"
               class="w-7 h-7 text-gray-200 animate-spin dark:text-neutral-700 fill-white"
@@ -216,7 +216,7 @@ const ListingReservation = ({
                 fill="currentFill"
               />
             </svg>
-            <span className="sr-only">Loading...</span>
+     
           </div>
         ) : (
           "Book"

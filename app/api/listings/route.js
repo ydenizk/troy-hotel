@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
     try {
-      const listings = await prisma.Listing.findMany({
+      const listings = await prisma.listing.findMany({
         orderBy: { createdAt: "desc" },
       });
       return NextResponse.json(listings);

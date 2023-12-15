@@ -24,11 +24,13 @@ const getData = async () => {
       cache: "no-store",
     });
 
-    if (!res.ok) {
+  /*   if (!res.ok) {
       throw new Error(`Failed with status: ${res.status}`);
+    } */
+    if (res.ok) {
+      const listings = await res.json();
+      return listings;
     }
-
-    return res.json();
   } catch (error) {
     console.error("Error fetching data:", error);
     throw error; // Rethrow the error to handle it in the calling function

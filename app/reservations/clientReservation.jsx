@@ -7,6 +7,7 @@ import { useCallback, useState } from "react";
 import { useRouter } from "next/navigation";
 
 import ListingCard from "./listingCard";
+import NavOthers2 from "../listings/navOthers2";
 
 const ClientReservation = ({ reservations, currentUser }) => {
   const [deletingId, setDeletingId] = useState("");
@@ -33,7 +34,13 @@ const ClientReservation = ({ reservations, currentUser }) => {
   );
 
   return (
-    <div className="w-full p-2 flex flex-col ">
+
+    <div className="w-full border-b " >
+      <NavOthers2 />
+
+
+    <div className="w-full p-2 flex flex-col my-10 ">
+    <h1 className="text-3xl text-neutral-700 border-b border-orange-800 mb-8">My Reservations</h1>
       {reservations?.map((reservation) => {
         return (
           <ListingCard 
@@ -49,6 +56,8 @@ const ClientReservation = ({ reservations, currentUser }) => {
           />
         );
       })}
+    </div>
+          
     </div>
   );
 };

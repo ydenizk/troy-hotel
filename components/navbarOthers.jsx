@@ -1,12 +1,10 @@
 "use client";
-
 import React, { useContext } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import SingleCard from "./singleCard";
 import SecondOverlay from "./secondOverlay";
 import { GeneralContext } from "@/context/generalContext";
-
 import SubNavText from "./subNavText";
 
 const Navbarothers = ({ details, data }) => {

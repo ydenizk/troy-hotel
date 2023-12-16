@@ -34,7 +34,7 @@ export const Newsletter = () => {
     <>
       <form
         onSubmit={handleSubmit}
-        className="flex justify-center items-center pb-20   "
+        className="flex justify-center items-center pb-12   "
       >
         <div>
           <input

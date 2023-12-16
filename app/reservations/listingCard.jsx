@@ -8,14 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import RoomDetails from "@/components/roomDetails";
 
-const ListingCard = ({
-  data,
-  reservation,
-  onAction,
-  disabled,
-  id = "",
-
-}) => {
+const ListingCard = ({ data, reservation, onAction, disabled, id = "" }) => {
   const router = useRouter();
 
   const handleCancel = useCallback(
@@ -91,27 +84,28 @@ const ListingCard = ({
             Cancel Reservation
           </button>
           <p>
-  
             Total: <span className="font-semibold"> {price}.00 € </span>{" "}
           </p>
         </div>
         <div className="flex items-center gap-1 text-xs text-neutral-700 mt-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-4 h-4"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-        <p className="font-light ">Free cancellation! | Book now, pay later</p>
-      </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-4 h-4"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          <p className="font-light ">
+            Free cancellation! | Book now, pay later
+          </p>
+        </div>
       </div>
     </div>
   );
